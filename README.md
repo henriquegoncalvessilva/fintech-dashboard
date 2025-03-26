@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Dashboard with React and Typescript
 
-Currently, two official plugins are available:
+This project was developed during the [Origamid](https://www.origamid.com/curso/react-com-typescript/) course with the goal of applying the knowledge acquired about React and Typescript. The project consists of a dashboard where we consume and integrate an API provided by the course.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objective
 
-## Expanding the ESLint configuration
+The main goal was to put into practice the concepts covered throughout the course, such as using React with Typescript, state management, API consumption, and project structure. The project was developed following the guidelines of the course, adhering to the folder and file structure recommended by the instructor to facilitate following along with the lessons.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React
+- Typescript
+- API Consumption
+- Vercel (for deployment)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The organization of the folders and files was done based on the best practices covered during the course, aiming to facilitate maintenance and tracking of the project's features.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## How to Run the Application Locally
+
+To run the application locally, follow these steps:
+
+1. **Clone the repository:**
+   In the terminal, clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/henriquegoncalvessilva/fintech-dashboard
+2. **Install dependencies:** Navigate to the project folder and install the dependencies using npm:
+
+	```bash
+	cd fintech-dashboard	
+	npm install
+3. **Start the development server:** 
+After installing the dependencies, start the application with the following command:
+   ```bash
+   npm run dev
+
+ ## Deployment
+
+The project has been deployed online through Vercel, making it easily accessible for anyone who wants to view the final result. [Go to de project](https://fintech-45fye26sm-henriquegoncalvessilvas-projects.vercel.app/)
