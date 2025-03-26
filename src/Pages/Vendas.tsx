@@ -1,8 +1,10 @@
 import { useData } from "../Context/DataContext";
 import VendaItem from "../Components/VendaItem";
+import Loading from "../Components/Loading";
 
 const Vendas = () => {
-    const { data } = useData();
+    const { data, loading } = useData();
+    if (loading === true) return <Loading />;
 
     if (data === null) return null;
     return (

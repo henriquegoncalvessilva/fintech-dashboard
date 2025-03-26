@@ -1,8 +1,10 @@
 import Chart from "../Components/Chart";
+import Loading from "../Components/Loading";
 import { useData } from "../Context/DataContext";
 
 const Resumo = () => {
-    const { data } = useData();
+    const { data, loading } = useData();
+    if (loading === true) return <Loading />;
     if (data === null) return null;
     return (
         <section>
@@ -54,9 +56,10 @@ const Resumo = () => {
                     </div>
                 </div>
             </div>
-            <div className="box"><Chart/></div>
+            <div className="box">
+                <Chart />
+            </div>
         </section>
-
     );
 };
 
