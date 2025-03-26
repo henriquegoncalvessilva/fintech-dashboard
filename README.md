@@ -1,7 +1,7 @@
 
 # Dashboard with React and Typescript
 
-This project was developed during the Origamid course with the goal of applying the knowledge acquired about React and Typescript. The project consists of a dashboard where we consume and integrate an API provided by the course.
+This project was developed during the [Origamid](https://www.origamid.com/curso/react-com-typescript/) course with the goal of applying the knowledge acquired about React and Typescript. The project consists of a dashboard where we consume and integrate an API provided by the course.
 
 ## Objective
 
