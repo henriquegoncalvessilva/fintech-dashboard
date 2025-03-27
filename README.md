@@ -38,4 +38,4 @@ After installing the dependencies, start the application with the following comm
 
  ## Deployment
 
-The project has been deployed online through Vercel, making it easily accessible for anyone who wants to view the final result. [Go to de project](https://fintech-45fye26sm-henriquegoncalvessilvas-projects.vercel.app/)
+The project has been deployed online through Vercel, making it easily accessible for anyone who wants to view the final result. [Go to de project](https://fintech-ashen-nu.vercel.app/)
