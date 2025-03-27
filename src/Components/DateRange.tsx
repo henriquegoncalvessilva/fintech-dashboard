@@ -1,8 +1,17 @@
 import DateInput from "./DateInput";
 import { useData } from "../Context/DataContext";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const DateRange = () => {
     const { inicio, final, setFinal, setInicio } = useData();
+    const navigate = useNavigate();
+
+
+    useEffect(() => {
+        navigate("/")
+    }, [inicio, final])
+    
 
     return (
         <form
@@ -23,6 +32,7 @@ const DateRange = () => {
                 value={final}
                 onChange={({ target }) => {
                     setFinal(target.value);
+
                 }}
             />
         </form>
