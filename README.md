@@ -11,7 +11,7 @@ The main goal was to put into practice the concepts covered throughout the cours
 
 - React
 - Context API
-- Lazy Components
+- Routers
 - Typescript
 - API Consumption
 - Vercel (for deployment)
