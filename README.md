@@ -10,6 +10,8 @@ The main goal was to put into practice the concepts covered throughout the cours
 ## Technologies Used
 
 - React
+- Context API
+- Lazy Components
 - Typescript
 - API Consumption
 - Vercel (for deployment)
